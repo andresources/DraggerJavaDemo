@@ -1,4 +1,4 @@
-package com.draggerjava.di.modals;
+package com.draggerjava.modals;
 
 public class StudentDetails {
     private String mStudentName;

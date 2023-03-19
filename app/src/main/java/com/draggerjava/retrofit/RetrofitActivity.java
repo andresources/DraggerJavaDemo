@@ -25,7 +25,7 @@ import retrofit2.Retrofit;
 public class RetrofitActivity extends AppCompatActivity {
     @Inject
     Retrofit mRetrofit;
-
+    String BASE_URL = "https://jsonplaceholder.typicode.com";
     TextView tvLog;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,7 +37,7 @@ public class RetrofitActivity extends AppCompatActivity {
                 .schoolModule(new SchoolModule())
                 .studentModule(new StudentModule("Hari"))
                 .sharedPrefModule(new SharedPrefModule(this))
-                .retrofitModule(new RetrofitModule("https://jsonplaceholder.typicode.com")).build().inject(RetrofitActivity.this);
+                .retrofitModule(new RetrofitModule(BASE_URL)).build().inject(RetrofitActivity.this);
         GetDataService service = mRetrofit.create(GetDataService.class);
         Call<List<RetroPhoto>> call = service.getAllPhotos();
         call.enqueue(new Callback<List<RetroPhoto>>() {

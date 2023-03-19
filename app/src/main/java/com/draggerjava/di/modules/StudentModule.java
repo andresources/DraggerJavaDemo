@@ -1,6 +1,6 @@
 package com.draggerjava.di.modules;
 
-import com.draggerjava.di.modals.StudentDetails;
+import com.draggerjava.modals.StudentDetails;
 
 import javax.inject.Singleton;
 

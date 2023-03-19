@@ -7,8 +7,8 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 import com.draggerjava.di.component.DaggerSchoolComponent;
-import com.draggerjava.di.modals.SchoolDetails;
-import com.draggerjava.di.modals.StudentDetails;
+import com.draggerjava.modals.SchoolDetails;
+import com.draggerjava.modals.StudentDetails;
 import com.draggerjava.di.modules.SchoolModule;
 import com.draggerjava.di.modules.SharedPrefModule;
 import com.draggerjava.di.modules.StudentModule;
